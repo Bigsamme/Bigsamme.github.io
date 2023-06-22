@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Contact{% endblock  %}
+
+
+{% block content %}
+<div class="contact-home">
+    <h2 style="color:#16A156;">If you would like to contact me you can use the form below or use my email samuelwhitehall@gmail.com</h2>
+    <div class="send-mail">
+        {{wtf.quick_form(form, novalidate)}}
+    </div>
+</div>
+
+<div class="fiverr">
+<h2 style="color:#16A156; margin-left:-45px">Or Contact Me on Fiverr</h2>
+<div itemscope="" itemtype="http://schema.org/Person" class="fiverr-seller-widget" style="display: inline-block;">
+    <a itemprop="url" href="https://www.fiverr.com/samuel_whitehal" rel="nofollow" target="_blank" style="display: inline-block;" data-uw-rm-brl="false" aria-label="Seller Programming &amp; Tech Check out my Gigs - opens in new tab" data-uw-rm-ext-link="" uw-rm-external-link-id="https://www.fiverr.com/samuel_whitehal$sellerprogramming&amp;techcheckoutmygigs">
+    <div class="fiverr-seller-content" id="fiverr-seller-widget-content-4d2ada42-3f7d-43f9-8bf6-b3aef68931be" itemprop="contentURL" style="display: inline-block; "><div class="crop"><img src="static/images/samuel.webp" class="fiverr-profile-img" role="presentation" alt="" data-uw-rm-ima="un">             <div class="overlay"></div></div>            
+        <img src="https://d2nb1f6l8b7ky0.cloudfront.net/fiverr_icon.png" class="fiverr-icon" role="presentation" alt="" data-uw-rm-ima="un">              
+        <div class="fiverr-seller-text"> Seller </div>          
+        <div class="fiverr-seller-category"> Programming &amp; Tech </div>            
+            <div class="fiverr-rating-stars" id="fiverr-rating-stars-4d2ada42-3f7d-43f9-8bf6-b3aef68931be" style="display: block;">  </div>          
+            <div class="check-gigs-btn">Check out my Gigs</div></div>
+    <div id="fiverr-widget-seller-data" style="display: none;">
+        <div itemprop="name">samuel_whitehal</div>
+        <div itemscope="" itemtype="http://schema.org/Organization"><span itemprop="name">Fiverr</span></div>
+        <div itemprop="jobtitle">Seller</div>
+        <div itemprop="description">
+As Python freelancer on Fiverr, I offer my services in various areas. I have a good grasp of Python programming and I'm eager to take on new projects. Whether it's basic web development, simple automation tasks, or data analysis, I strive to provide reliable and efficient solutions. I am committed to delivering high-quality work that meets your expectations. Let's collaborate and bring your ideas to life with Python!
+</div>
+    </div>
+</a>
+</div>
+</div>
+{% endblock %}

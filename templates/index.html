@@ -1,0 +1,48 @@
+
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+    {% block style%}
+    {{ super() }}
+    <link rel="stylesheet" href="static/css/styles.css">
+    {% endblock%}
+
+{% block title %}Home{% endblock  %}
+
+
+{% block content %}
+    <table>
+        <tbody>
+            <tr>
+                <td><img src="static/images/samuel.webp" alt="Profile pic" class="pic-me"  style="border-radius:150px " ></td>
+                <td><h2 style="margin-left:6px">Samuel Whitehall</h2><h4 style="margin-left:12px">Python Developer</h4><br> <h5 style="margin-left:12px">Hello and welcome to my website my name is samuel whitehall and i am a Auspiraring python Dev who has a passion for creating new things</h5></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr style="height: 10px;">
+
+    <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Languages and Databases</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img alt="" src="static/images/python.png" class="responsive-img">Python
+            </div>
+            <div class="col s4 m2">
+              <img alt="" src="static/images/html.png" class="responsive-img">HTML5   And     CSS3
+            </div>
+
+            <div class="col s4 m2">
+              <img alt="" src="static/images/sql.png" class="responsive-img">SQL
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+        </tbody>
+    </table>
+    <script id="fiverr-seller-widget-script-4d2ada42-3f7d-43f9-8bf6-b3aef68931be" src="https://widgets.fiverr.com/api/v1/seller/samuel_whitehal?widget_id=4d2ada42-3f7d-43f9-8bf6-b3aef68931be" data-config="{&quot;category_name&quot;:&quot;Programming \u0026 Tech&quot;}" async="true" defer="true"></script>
+{% endblock %}
+
